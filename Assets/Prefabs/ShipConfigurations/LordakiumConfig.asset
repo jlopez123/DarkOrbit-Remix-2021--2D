@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2af48e522bee3684b8bb23c9df4c621b, type: 3}
+  m_Name: LordakiumConfig
+  m_EditorClassIdentifier: 
+  _shipId: {fileID: 11400000, guid: bc9705fdb37b8ae49b90af29497dc31e, type: 2}
+  _hullPoints: 300000
+  _shieldPoints: 400000
+  _speed: 2
+  _mainProjectile: {fileID: 11400000, guid: 66a8486a757683f40ac34a853e3651eb, type: 2}
+  _mainDamage: 2000
+  _mainWeaponsRange: 7
+  _multipleShootPoints: 0
+  _hasMissileModule: 0
+  _hasRocketModule: 0
+  _aggressive: 0
+  _shipAnimConfig: {fileID: 11400000, guid: 07ad19ce58f5daa47b66a7e888ffc4e1, type: 2}
+  _shipRewards:
+    _credits: 204800
+    _uridium: 64
+    _exp: 25600
+    _honor: 128

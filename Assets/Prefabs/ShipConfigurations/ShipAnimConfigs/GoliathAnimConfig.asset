@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c85796c5a4945644295c36c2753b87bf, type: 3}
+  m_Name: GoliathAnimConfig
+  m_EditorClassIdentifier: 
+  _sprites:
+  - {fileID: 21300000, guid: 7554b4035993029429bd2f7053d4ea49, type: 3}
+  - {fileID: 21300000, guid: d5763bde52c5fd645817b80c3d87adb7, type: 3}
+  - {fileID: 21300000, guid: 35bdd2b8bebaf604a8f2e9f02e34743d, type: 3}
+  - {fileID: 21300000, guid: 87ccd1351360d5640abfce5e68c48fa2, type: 3}
+  - {fileID: 21300000, guid: 5fc4017972eac084099fa956254f8e11, type: 3}
+  - {fileID: 21300000, guid: e0c04d23d98b1c44da2da4c096a8ef43, type: 3}
+  - {fileID: 21300000, guid: 44532ab13160e264ba084406f8f49e13, type: 3}
+  - {fileID: 21300000, guid: 8b96dff6b624fcb47a4fb13efe4caa60, type: 3}
+  - {fileID: 21300000, guid: 389e6b507306967489d0686ea71f36fe, type: 3}
+  - {fileID: 21300000, guid: 02d233a033ead2f489cebc9be7d59db1, type: 3}
+  - {fileID: 21300000, guid: 4b03e950d0a7a9d448643a5a42613cdb, type: 3}
+  - {fileID: 21300000, guid: 7c082044990ad6744b922ed42881dd35, type: 3}
+  - {fileID: 21300000, guid: c8d94e88136ec984daa8a9488f9cf332, type: 3}
+  - {fileID: 21300000, guid: 2448edcf4d31d1545b23ba79ebb35fa6, type: 3}
+  - {fileID: 21300000, guid: 7f2bbddad297b7549b29c64a2e973336, type: 3}
+  - {fileID: 21300000, guid: e0f9622360907154cb3520d73f29f394, type: 3}
+  - {fileID: 21300000, guid: d3e3e8b8f67c57748ba3331c6e0fa3a5, type: 3}
+  - {fileID: 21300000, guid: 79ab51b3e1ddd2046aef890d81ff4aca, type: 3}
+  - {fileID: 21300000, guid: 25a56eed6e9524e4aab18694bc0be3c6, type: 3}
+  - {fileID: 21300000, guid: d670afaaf95b20d45b9bc54ab0796447, type: 3}
+  - {fileID: 21300000, guid: 14ccab0e5e1520d4cbc618e61c2172cd, type: 3}
+  - {fileID: 21300000, guid: a69e45704e2f4ca42a966cc884f1d77e, type: 3}
+  - {fileID: 21300000, guid: 65c005f817b5b3b4f8fe04c03a87e5ec, type: 3}
+  - {fileID: 21300000, guid: 8107dd197a1ff21438dfa5beaab771df, type: 3}
+  - {fileID: 21300000, guid: 6b476afcfd1201749b98f20cda648406, type: 3}
+  - {fileID: 21300000, guid: ddb02120f62798f4d8c5bfd79f9a563c, type: 3}
+  - {fileID: 21300000, guid: b77980c15da4f064dbffd738867ea078, type: 3}
+  - {fileID: 21300000, guid: f7330616d5ef153428e832fcd6347cab, type: 3}
+  - {fileID: 21300000, guid: e080a07580dc0e74a97a45866740831a, type: 3}
+  - {fileID: 21300000, guid: c57a0f35cac358647b6c444df03ae55f, type: 3}
+  - {fileID: 21300000, guid: 68480a4ad8cc19847bf0c50c101eeeb4, type: 3}
+  - {fileID: 21300000, guid: 59ecb0fed5134fc4180cdc2ba65a7215, type: 3}
+  - {fileID: 21300000, guid: 7554b4035993029429bd2f7053d4ea49, type: 3}
+  _fps: 20
+  _animated: 0
+  _flipX: 0

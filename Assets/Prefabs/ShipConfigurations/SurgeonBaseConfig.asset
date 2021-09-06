@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2af48e522bee3684b8bb23c9df4c621b, type: 3}
+  m_Name: SurgeonBaseConfig
+  m_EditorClassIdentifier: 
+  _shipId: {fileID: 11400000, guid: e646b43321fe4fc4b98fe5493903c163, type: 2}
+  _hullPoints: 256000
+  _shieldPoints: 15000
+  _speed: 4
+  _mainProjectile: {fileID: 11400000, guid: 1e228a86ec39d0942b06798d73cbc0c0, type: 2}
+  _mainDamage: 2000
+  _mainWeaponsRange: 10
+  _multipleShootPoints: 1
+  _hasMissileModule: 1
+  _hasRocketModule: 1
+  _aggressive: 0
+  _shipAnimConfig: {fileID: 11400000, guid: def0a185b528cd74aa71d1c3f917ce9b, type: 2}
+  _shipRewards:
+    _credits: 0
+    _uridium: 0
+    _exp: 512000
+    _honor: 512
