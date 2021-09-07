@@ -7,7 +7,7 @@ public class PlayerShipInstaller : MonoBehaviour
     private FollowToTarget _followCam;
     [SerializeField]
     private Reticle _reticle;
-    //
+    // --
     [SerializeField]
     private PlayerData _player;
 
