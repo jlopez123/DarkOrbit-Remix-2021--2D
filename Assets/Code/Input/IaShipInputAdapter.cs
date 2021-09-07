@@ -2,9 +2,9 @@
 
 public class IaShipInputAdapter : IShipInput
 {
-    private ShipMediator _myShip;
+    private ShipImpl _myShip;
     private INpcBehaviour _npcBehaviour;
-    public IaShipInputAdapter(ShipMediator ship, INpcBehaviour npcBehaviour)
+    public IaShipInputAdapter(ShipImpl ship, INpcBehaviour npcBehaviour)
     {
         _myShip = ship;
         _npcBehaviour = npcBehaviour;

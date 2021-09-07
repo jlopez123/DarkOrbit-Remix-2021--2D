@@ -35,7 +35,7 @@ public abstract class Projectile : PooledMonoBehaviour, IDamage
     public int Damage => _damage;
     public ITargetable Owner => _owner;
     public int SingleProjectileDamage => _singleDamage; 
-    public void Configure(ITargetable target, int damage, float weaponsAngle, ITargetable owner, bool playAudio)
+    public void Configure(ITargetable target, int damage, float weaponsAngle, ITargetable owner)
     {        
         _reachedTarget = false;
         _damage = (int)(damage * _multiplierDamage);
@@ -46,12 +46,6 @@ public abstract class Projectile : PooledMonoBehaviour, IDamage
         _timer = 0f;
         _initialDistance = Mathf.Abs(Vector2.Distance(_target.transform.position, transform.position));
         DoStart();
-
-        //
-        //if (playAudio)
-        //AudioSource.PlayClipAtPoint(_audio.clip, transform.position, _audio.volume);
-        //  _audio.Play();
-
     }
     private void Awake()
     {

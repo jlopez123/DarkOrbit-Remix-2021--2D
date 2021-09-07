@@ -3,6 +3,7 @@ using UnityEngine;
 
 public abstract class WeaponsModule : MonoBehaviour
 {
+    //recibir de confg(id.value - string, type, range, etc)
     [SerializeField]
     protected ProjectileId _projectileId;
     [SerializeField]
@@ -24,9 +25,9 @@ public abstract class WeaponsModule : MonoBehaviour
     }
     public bool WeaponsOnRange() => _weaponsController.DistanceFromTarget() <= _maxRange;
     
-    protected Projectile SpawnProjectile(string id,Vector3 position, Quaternion rotation, ProjectileConfig config, bool useSingleDamage, bool playAudio = false)
+    protected Projectile SpawnProjectile(string id,Vector3 position, Quaternion rotation, ProjectileConfig config, bool useSingleDamage)
     {
-        var projectile = _projectileFactory.Create(id, position, rotation, config, useSingleDamage,playAudio);
+        var projectile = _projectileFactory.Create(id, position, rotation, config, useSingleDamage);
         return projectile;
     }
     public abstract void StartAttack();

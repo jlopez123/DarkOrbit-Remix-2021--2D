@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c00a97e73c552e24483292ee38d28a80, type: 3}
+  m_Name: KristallonRewards
+  m_EditorClassIdentifier: 
+  _shipId: {fileID: 11400000, guid: cc991a80507b2444c88aa882d6de9f28, type: 2}
+  _credits: 409600
+  _uridium: 128
+  _exp: 51200
+  _honor: 256

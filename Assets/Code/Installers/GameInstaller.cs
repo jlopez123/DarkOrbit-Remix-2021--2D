@@ -6,7 +6,7 @@ public class GameInstaller : GeneralInstaller
     [SerializeField]
     private UIShipsHudController _shipsHudController;
     [SerializeField]
-    private ShipMediator _shipBasePrefab;
+    private ShipImpl _shipBasePrefab;
     [SerializeField]
     private ProjectilesConfiguration _projectilesConfiguration;
     protected override void DoInstallDependencies()

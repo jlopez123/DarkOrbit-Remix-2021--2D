@@ -24,8 +24,4 @@ MonoBehaviour:
   _hasRocketModule: 1
   _aggressive: 0
   _shipAnimConfig: {fileID: 11400000, guid: 2ca29d1d81c52a148b6a9c5dc5a3950e, type: 2}
-  _shipRewards:
-    _credits: 0
-    _uridium: 0
-    _exp: 512000
-    _honor: 512
+  _shipRewards: {fileID: 11400000, guid: 76fde00ceb894a843a82dc1a62c01972, type: 2}

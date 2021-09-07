@@ -240,6 +240,8 @@ MonoBehaviour:
   _rankIconsConfig: {fileID: 11400000, guid: a9892ca22ca47d246ad544547dcc0de5, type: 2}
   _companyIconsConfig: {fileID: 11400000, guid: 0cfdc95ce29b2b741b740304095bb3cf,
     type: 2}
+  _rewardsConfiguration: {fileID: 11400000, guid: 1df198b501ac5b149b0761c576ef3566,
+    type: 2}
 --- !u!1 &2132394664
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,8 +1,8 @@
 ﻿public class ShipFactory
 {
-    private readonly ShipMediator _baseShipPrefab;
+    private readonly ShipImpl _baseShipPrefab;
 
-    public ShipFactory(ShipMediator basePrefab)
+    public ShipFactory(ShipImpl basePrefab)
     {
         _baseShipPrefab = basePrefab;
     }

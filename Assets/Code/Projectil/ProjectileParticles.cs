@@ -15,12 +15,14 @@ public class ProjectileParticles : MonoBehaviour
     private Vector4 _randomValues;
     private bool _hitOnShield;
 
+    private float _weaponsAngle;
     private void OnEnable()
     {
         _hitOnShield = false;
     }
     public void ShowParticles(ITargetable target, float weaponsAngle)
     {
+        _weaponsAngle = weaponsAngle;
         var prefab = GetPrefab(target);
         var position = GetPosition(target);
         var rotation = GetRotation(target, weaponsAngle);
@@ -43,7 +45,7 @@ public class ProjectileParticles : MonoBehaviour
     {
         if(_hitOnShield)
         {
-            return target.transform.position + transform.right * .8f;
+            return target.transform.position + ((Quaternion.AngleAxis(_weaponsAngle, Vector3.forward) * Vector3.right) * .8f);
         }
         return target.transform.position + GetOffset();
     }
@@ -61,7 +63,8 @@ public class ProjectileParticles : MonoBehaviour
     {
         if(_hitOnShield)
         {
-            return Quaternion.AngleAxis(transform.eulerAngles.z,  Vector3.forward);
+            return Quaternion.AngleAxis(weaponsAngle, Vector3.forward);
+            //return Quaternion.AngleAxis(transform.eulerAngles.z,  Vector3.forward);
         }
         return Quaternion.identity;
     }

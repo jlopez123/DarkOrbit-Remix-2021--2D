@@ -13,13 +13,14 @@ public class RocketLauncherModule : WeaponsModule
     private IEnumerator _attackCoroutine;
     private bool _isRunningCoroutine = false;
 
+    // usar timers para cooldown
     public override void StartAttack()
     {
         if (_isRunningCoroutine)
-            return;
+           return;
 
         if (_attackCoroutine != null)
-            StopCoroutine(_attackCoroutine);
+           StopCoroutine(_attackCoroutine);
 
         _attackCoroutine = AttackCoroutine();
         StartCoroutine(_attackCoroutine);
@@ -53,7 +54,7 @@ public class RocketLauncherModule : WeaponsModule
         var config = new ProjectileConfig(_weaponsController.CurrentTarget, 0 , _weaponsController.WeaponsDirection.eulerAngles.z,
             (ITargetable)_weaponsController.Owner);
 
-        var missile = SpawnProjectile(_projectileId.Value, transform.position, direction, config, true, index == 0);
+        var missile = SpawnProjectile(_projectileId.Value, transform.position, direction, config, true);
     }
     public override void SetParameters(int damage, float range, float reloadTime, bool multipleShootPoints)
     {

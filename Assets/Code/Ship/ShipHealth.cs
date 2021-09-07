@@ -23,7 +23,7 @@ public class ShipHealth : MonoBehaviour, IHealth
 
     public float Shield => _currentShieldPoints;
 
-    public ITargetable LastDamager { get; private set; }
+    public IDamage LastDamager { get; private set; }
     public void Configure(IShip myShip, int maxHullPoints, int maxShieldPoints)
     {
         _myShip = myShip;
@@ -47,7 +47,7 @@ public class ShipHealth : MonoBehaviour, IHealth
     public void TakeHit(IDamage hitBy)
     {
         ModifyHealth(hitBy.Damage);
-        LastDamager = hitBy.Owner;
+        LastDamager = hitBy;
         //
         OnHit(hitBy);
     }

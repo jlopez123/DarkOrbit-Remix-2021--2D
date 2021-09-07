@@ -14,7 +14,7 @@ public class PlayerShipInstaller : MonoBehaviour
     private PlayerData _player;
 
     private ShipBuilder _shipBuilder;
-    private ShipMediator _playerShip;
+    private ShipImpl _playerShip;
 
     private ShipFactory _shipFactory;
     private void Awake()

@@ -4,6 +4,8 @@
 public class ShipBaseConfiguration : ScriptableObject
 {
     [SerializeField]
+    private string _defaultName;
+    [SerializeField]
     private ShipId _shipId;
     [SerializeField]
     private int _hullPoints;
@@ -29,9 +31,8 @@ public class ShipBaseConfiguration : ScriptableObject
     private bool _aggressive;
     [SerializeField]
     private ShipAnimConfig _shipAnimConfig;
-    [SerializeField]
-    private ShipRewards _shipRewards;
 
+    public string DefaultName => _defaultName;
     public ShipId ShipId => _shipId;
     public int HullPoints => _hullPoints;
     public int ShieldPoints => _shieldPoints;
@@ -43,6 +44,6 @@ public class ShipBaseConfiguration : ScriptableObject
     public bool HasRocketModule => _hasRocketModule;
     public bool Aggressive => _aggressive;
     public ShipAnimConfig ShipAnimConfig => _shipAnimConfig;
-    public ShipRewards ShipRewards => _shipRewards;
+   // public ShipRewards ShipRewards => _shipRewards;
     public float MainWeaponsRange => _mainWeaponsRange;
 }

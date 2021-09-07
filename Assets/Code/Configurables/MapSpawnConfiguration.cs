@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(fileName = "Map Configuration", menuName = "Map Spawn Configuration")]
+[CreateAssetMenu(fileName = "Map Configuration", menuName = "Configurables/Map Spawn Configuration")]
 public class MapSpawnConfiguration : ScriptableObject
 {
     [SerializeField]

@@ -24,7 +24,7 @@ public class NpcBehaviourImpl :  INpcBehaviour
     public bool IsAttacking => _isAttacking;
 
     private IShip _myShip;
-    public NpcBehaviourImpl(ShipMediator myShip, bool aggressive)
+    public NpcBehaviourImpl(ShipImpl myShip, bool aggressive)
     {
         _myShip = myShip;
         _myPosition = myShip.RotatedTransform;

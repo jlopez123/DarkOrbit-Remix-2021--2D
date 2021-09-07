@@ -29,6 +29,8 @@ public class MissileModule : WeaponsModule
 
         _isRunningCoroutine = false;
     }
+
+    // usar timers para cooldown
     private IEnumerator AttackCoroutine()
     {
         _isRunningCoroutine = true;
@@ -45,7 +47,7 @@ public class MissileModule : WeaponsModule
         var config  = new ProjectileConfig(_weaponsController.CurrentTarget, 0 , _weaponsController.WeaponsDirection.eulerAngles.z,
             (ITargetable)_weaponsController.Owner);
 
-        var missile = SpawnProjectile(_projectileId.Value, transform.position, _weaponsController.WeaponsDirection, config, true, true);
+        var missile = SpawnProjectile(_projectileId.Value, transform.position, _weaponsController.WeaponsDirection, config, true);
     }
     public override void SetParameters(int damage, float range, float reloadTime, bool multipleShootPoints)
     {

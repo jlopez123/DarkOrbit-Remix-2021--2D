@@ -2,6 +2,7 @@
 
 public class ShipConfig
 {
+    public string Id;
     public IShipInput Input;
     public IShipVisual ShipSprites;
     public int HullPoints;
@@ -14,9 +15,10 @@ public class ShipConfig
     public HashSet<WeaponType> WeaponsAllowed;
     public Team Team;
     public TargetInfo TargetInfo;
-    public ShipConfig(IShipInput input, IShipVisual shipSprites, int hp, int sp, float speed, ProjectileId mainProjectile,
+    public ShipConfig(string id, IShipInput input, IShipVisual shipSprites, int hp, int sp, float speed, ProjectileId mainProjectile,
         int mDamage, HashSet<WeaponType> weaponsAllowed, Team team, TargetInfo targetInfo, float mainWeaponsRange, bool multipleShootPoints)
     {
+        Id = id;
         Input = input;
         ShipSprites = shipSprites;
         HullPoints = hp;

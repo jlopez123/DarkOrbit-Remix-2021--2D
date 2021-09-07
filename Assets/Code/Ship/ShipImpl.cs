@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class ShipMediator : MonoBehaviour, IShip
+public class ShipImpl : MonoBehaviour, IShip
 {
     private IShipInput _shipInput;
     private ShipMovement _shipMovement;
@@ -29,7 +29,9 @@ public class ShipMediator : MonoBehaviour, IShip
 
     public IWeaponsController Weapons => _shipWeapons;
 
-    public event Action<ITargetable> OnCurrentTargetChanged = delegate { };
+    public string Id  { get; private set;}
+
+public event Action<ITargetable> OnCurrentTargetChanged = delegate { };
     public event Action OnQuitTarget = delegate { };
     public void Configure(ShipConfig shipConfig)
     {
@@ -42,6 +44,7 @@ public class ShipMediator : MonoBehaviour, IShip
 
         Team = shipConfig.Team;
         TargetInfo = shipConfig.TargetInfo;
+        Id = shipConfig.Id;
     }
     private void Awake()
     {

@@ -10,7 +10,7 @@ public class ShipBuilder
         Ia
     }
 
-    private ShipMediator _prefab;
+    private ShipImpl _prefab;
     private Vector3 _position = Vector3.zero;
     private Quaternion _rotation = Quaternion.identity;
 
@@ -22,7 +22,7 @@ public class ShipBuilder
     private string _nickName = "";
     private TargetInfo _targetInfo = null;
 
-    public ShipBuilder FromPrefab(ShipMediator prefab)
+    public ShipBuilder FromPrefab(ShipImpl prefab)
     {
         _prefab = prefab;
         return this;
@@ -62,7 +62,7 @@ public class ShipBuilder
         _nickName = nick;
         return this;
     }
-    private IShipInput GetInput(ShipMediator ship)
+    private IShipInput GetInput(ShipImpl ship)
     {
         switch(_inputMode)
         {
@@ -74,7 +74,7 @@ public class ShipBuilder
                 throw new ArgumentOutOfRangeException();
         }
     }
-    private IShipVisual GetVisual(ShipMediator ship)    
+    private IShipVisual GetVisual(ShipImpl ship)    
     {
         var spriteRenderer = ship.GetComponent<SpriteRenderer>();
         var sprites = _spawnConfiguration.ShipAnimConfig.Sprites;
@@ -86,7 +86,7 @@ public class ShipBuilder
             
         return new RotatedShipSprites(spriteRenderer, sprites,flipX);
     }
-    private HashSet<WeaponType> GetWeaponsAllowed(ShipMediator ship)
+    private HashSet<WeaponType> GetWeaponsAllowed(ShipImpl ship)
     {
         var weaponsAllowed = new HashSet<WeaponType>() { WeaponType.Main };
 
@@ -98,11 +98,11 @@ public class ShipBuilder
 
         return weaponsAllowed;
     }
-    public ShipMediator Build()
+    public ShipImpl Build()
     {
         var ship = UnityEngine.Object.Instantiate(_prefab, _position, _rotation);
         Debug.Log(_team);
-        var shipConfig = new ShipConfig(GetInput(ship), GetVisual(ship), _spawnConfiguration.HullPoints, _spawnConfiguration.ShieldPoints,
+        var shipConfig = new ShipConfig(_spawnConfiguration.ShipId.Value, GetInput(ship), GetVisual(ship), _spawnConfiguration.HullPoints, _spawnConfiguration.ShieldPoints,
             _spawnConfiguration.Speed,_spawnConfiguration.MainProjectile, _spawnConfiguration.MainDamage, GetWeaponsAllowed(ship), _team, _targetInfo
             ,_spawnConfiguration.MainWeaponsRange, _spawnConfiguration.MultipleShootPoints);
 

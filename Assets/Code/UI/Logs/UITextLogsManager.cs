@@ -6,7 +6,7 @@ using UnityEngine;
 public class UITextLogsManager : MonoBehaviour
 {
     [SerializeField]
-    private PooledMonoBehaviour _prefab;
+    private UILogText _prefab;
     [SerializeField]
     private Transform _container;
     [SerializeField]
@@ -39,12 +39,10 @@ public class UITextLogsManager : MonoBehaviour
         if (_logsToShow.Count <= 0)
             return;
 
-
-        var newLog = _prefab.Get<PooledMonoBehaviour>();
+        var newLog = _prefab.Get<UILogText>();
         newLog.transform.SetParent(_container, false);
-        // cambiar a pool
-        //var newLog = Instantiate(_prefab, _container);
-        //newLog.Configure(_logsToShow.Dequeue());
+        newLog.transform.SetSiblingIndex(0);
+        newLog.Configure(_logsToShow.Dequeue());
         _timer = 0f;
     }
 }
