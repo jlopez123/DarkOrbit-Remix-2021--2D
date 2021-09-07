@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2af48e522bee3684b8bb23c9df4c621b, type: 3}
   m_Name: LordakiumConfig
   m_EditorClassIdentifier: 
-  _defaultName: 
+  _defaultName: -=[ Lordakium ]=-
   _shipId: {fileID: 11400000, guid: bc9705fdb37b8ae49b90af29497dc31e, type: 2}
   _hullPoints: 300000
   _shieldPoints: 100000

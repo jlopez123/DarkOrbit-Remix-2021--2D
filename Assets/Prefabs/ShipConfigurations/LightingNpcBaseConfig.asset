@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2af48e522bee3684b8bb23c9df4c621b, type: 3}
   m_Name: LightingNpcBaseConfig
   m_EditorClassIdentifier: 
+  _defaultName: -=[ Vengeance ]=-
   _shipId: {fileID: 11400000, guid: f8becf9c58a903945be3d06e7271e95a, type: 2}
   _hullPoints: 10000
   _shieldPoints: 10000
@@ -24,4 +25,3 @@ MonoBehaviour:
   _hasRocketModule: 1
   _aggressive: 1
   _shipAnimConfig: {fileID: 11400000, guid: 8e686398c8a11d24e842ddc56b6df74c, type: 2}
-  _shipRewards: {fileID: 11400000, guid: 76fde00ceb894a843a82dc1a62c01972, type: 2}

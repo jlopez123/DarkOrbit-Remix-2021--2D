@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-public class ShipImpl : MonoBehaviour, IShip
+public class ShipImpl : PooledMonoBehaviour, IShip
 {
     private IShipInput _shipInput;
     private ShipMovement _shipMovement;
@@ -93,6 +93,12 @@ public event Action<ITargetable> OnCurrentTargetChanged = delegate { };
         _shipSprites.UpdateSprite(angle);
         _shipWeapons.TurnWeapons(angle);
     }
+
+    internal object Get<T>(Vector3 position, Quaternion rotation, object parent)
+    {
+        throw new NotImplementedException();
+    }
+
     private bool CanAttackTarget()
     {
         if (_currentTarget == null) 

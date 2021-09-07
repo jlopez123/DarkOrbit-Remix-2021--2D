@@ -45,6 +45,7 @@ public class ProjectileParticles : MonoBehaviour
     {
         if(_hitOnShield)
         {
+            // target.transform.position + transform.right * .8f
             return target.transform.position + ((Quaternion.AngleAxis(_weaponsAngle, Vector3.forward) * Vector3.right) * .8f);
         }
         return target.transform.position + GetOffset();

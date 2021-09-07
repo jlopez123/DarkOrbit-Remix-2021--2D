@@ -100,7 +100,8 @@ public class ShipBuilder
     }
     public ShipImpl Build()
     {
-        var ship = UnityEngine.Object.Instantiate(_prefab, _position, _rotation);
+        var ship = _prefab.Get<ShipImpl>(_position, _rotation);
+       // var ship = UnityEngine.Object.Instantiate(_prefab, _position, _rotation);
         Debug.Log(_team);
         var shipConfig = new ShipConfig(_spawnConfiguration.ShipId.Value, GetInput(ship), GetVisual(ship), _spawnConfiguration.HullPoints, _spawnConfiguration.ShieldPoints,
             _spawnConfiguration.Speed,_spawnConfiguration.MainProjectile, _spawnConfiguration.MainDamage, GetWeaponsAllowed(ship), _team, _targetInfo

@@ -36,9 +36,10 @@ public class EnemySpawner : MonoBehaviour
     {
         var ship = _shipFactory.Create(shipConfiguration.ShipId.Value).WithBaseConfiguration(shipConfiguration).
             WithPostion(position).WithRotation(rotation).
-            WithInputMode(ShipBuilder.InputMode.Ia).WithTeam(Team.Aliens).WithTargetInfo(new TargetInfo(shipConfiguration.ShipId.ShipName, "", 0, Company.Default))
+            WithInputMode(ShipBuilder.InputMode.Ia).WithTeam(Team.Aliens).WithTargetInfo(new TargetInfo(shipConfiguration.DefaultName, "", 0, Company.Default))
             .Build();
 
+        ship.transform.SetParent(this.transform);
         ship.Health.OnDied += health => Npc_OnDied(ship,health);
     }
 

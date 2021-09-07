@@ -12,10 +12,6 @@ public class DeadParticles : MonoBehaviour
         _entity = GetComponent<IHealth>();
         _entity.OnDied += HandleDead;
     }
-    private void OnDisable()
-    {
-        _entity.OnDied -= HandleDead;
-    }
     private void HandleDead(IHealth obj)
     {
         if (_deadParticles == null)

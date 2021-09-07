@@ -45,7 +45,11 @@ public class PlayerInputManager : MonoBehaviour
     private bool VerifyValidClick()
     {
         if (EventSystem.current.IsPointerOverGameObject())
+        {
+            Debug.Log("yes");
             return false;
+        }
+
         var hit = GetHitFromRaycast();
 
         var targetableObject = hit.collider.GetComponent<ITargetable>();

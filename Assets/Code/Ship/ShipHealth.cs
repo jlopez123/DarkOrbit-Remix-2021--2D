@@ -8,8 +8,8 @@ public class ShipHealth : MonoBehaviour, IHealth
 
     private float _maxShieldPoints;
 
-    public float _currentHullPoints;
-    public float _currentShieldPoints;
+    private float _currentHullPoints;
+    private float _currentShieldPoints;
     private IShip _myShip;
 
     public event Action<float, float> OnHealthChanged = delegate { };
