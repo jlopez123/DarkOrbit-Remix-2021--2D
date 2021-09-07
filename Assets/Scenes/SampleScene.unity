@@ -167,7 +167,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _followCam: {fileID: 519420030}
   _reticle: {fileID: 49126652}
-  _playerShipConfig: {fileID: 11400000, guid: 87ff43aa1de7d034081ce53b0f88e423, type: 2}
   _player: {fileID: 11400000, guid: ddfa6b3fcf19aa44684c07713b4825fa, type: 2}
 --- !u!114 &17299882
 MonoBehaviour:
@@ -660,7 +659,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3281,8 +3280,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mapSpawnConfiguration: {fileID: 11400000, guid: ad5dd101d0631624e807bfc20bd91104,
     type: 2}
-  _maxRandomPosition: {x: 35, y: 35}
-  _maxNpcs: 0
+  _maxRandomPosition: {x: 20, y: 20}
+  _maxNpcs: 15
   _spawnAllOnStart: 1
   _startDelay: 0
 --- !u!4 &1757997568

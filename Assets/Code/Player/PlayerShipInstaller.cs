@@ -7,8 +7,6 @@ public class PlayerShipInstaller : MonoBehaviour
     private FollowToTarget _followCam;
     [SerializeField]
     private Reticle _reticle;
-    [SerializeField]
-    private ShipBaseConfiguration _playerShipConfig;
     //
     [SerializeField]
     private PlayerData _player;
@@ -39,7 +37,7 @@ public class PlayerShipInstaller : MonoBehaviour
 
     private void SpawnPlayerShip()
     {
-        _shipBuilder = _shipFactory.Create(_playerShipConfig.ShipId.Value).WithInputMode(ShipBuilder.InputMode.Unity).WithBaseConfiguration(_playerShipConfig);
+        _shipBuilder = _shipFactory.Create(_player.ShipConfig.ShipId.Value).WithInputMode(ShipBuilder.InputMode.Unity).WithBaseConfiguration(_player.ShipConfig);
 
         var playerInfo = new TargetInfo(_player.Nickname, _player.Title, _player.Rank, _player.Company);
         _playerShip = _shipBuilder.WithTeam(Team.Players).WithTargetInfo(playerInfo)

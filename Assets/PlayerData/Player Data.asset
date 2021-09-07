@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _nickname: JoTexD97
   _title: Legend
-  _shipConfig: {fileID: 11400000, guid: 87ff43aa1de7d034081ce53b0f88e423, type: 2}
+  _shipConfig: {fileID: 11400000, guid: 4a56f9596e164664e989ff18f68929a1, type: 2}
   _company: 1
   _level: 14
   _rank: 21

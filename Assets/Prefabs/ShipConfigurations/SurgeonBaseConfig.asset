@@ -15,7 +15,7 @@ MonoBehaviour:
   _defaultName: 
   _shipId: {fileID: 11400000, guid: e646b43321fe4fc4b98fe5493903c163, type: 2}
   _hullPoints: 256000
-  _shieldPoints: 50000
+  _shieldPoints: 100000
   _speed: 4
   _mainProjectile: {fileID: 11400000, guid: 1e228a86ec39d0942b06798d73cbc0c0, type: 2}
   _mainDamage: 2000
